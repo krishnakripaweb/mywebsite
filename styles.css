@@ -1,0 +1,372 @@
+body{
+    margin:0px;
+}
+u1{
+    margin:0px;
+    padding:0px
+}
+
+/* header */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+img#logo-image{
+    height:100px;
+}
+
+.link-box ul{
+    display:flex;
+    list-style-type:none ;
+    gap:30px;
+}
+.link-box ul li a{
+    text-decoration: none;
+    color:black
+}
+.link-box ul li a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+
+@media (max-width:768px) {
+    header{
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding: 0px 15px;
+}
+    
+}
+
+/* hero section */
+
+#hero{
+    /*background-color:dodgerblue; */
+    background-image:url("hero.avif");
+    background-size: cover;
+    background-position: center;
+    color:maroon;
+    padding:100px 50px;
+    text-align: center;
+}
+.sec-title{
+        text-align:center;
+}
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Shared button styling */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  padding: 16px 26px;
+  border-radius: 50px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.cta-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-family: inherit;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 15px 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Consultation Button */
+.btn-primary {
+  background: #292722;
+  color: #ffffff;
+  border: 1px solid #292722;
+}
+
+.btn-primary:hover {
+  background: #a66b50;
+  border-color: #a66b50;
+  transform: translateY(-3px);
+}
+
+/* Portfolio Button */
+.btn-outline {
+  background: transparent;
+  color: #292722;
+  border: 1px solid #bcb6ad;
+}
+
+.btn-outline:hover {
+  color: #a66b50;
+  border-color: #a66b50;
+  transform: translateY(-3px);
+}
+
+/* Arrow Animation */
+.btn:hover .arrow {
+  transform: translate(3px, -2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .cta-container {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 13px 16px;
+    gap: 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width:768px) {
+    #hero{
+        padding:50px 15px;
+        text-align: center;
+    }
+}
+/* about section */
+
+#about-box{
+        display:flex;
+         padding: 0px 50px; 
+         gap:30px;
+}
+#about-text-box{
+    width:50%;
+}
+#about-image-box{ 
+    width:50%;
+}
+
+#about-image{
+    width:100%;
+}
+
+@media (max-width:768px){
+    #about-box{
+        
+         padding: 0px 15px; 
+         flex-wrap: wrap;
+
+}
+    #about-text-box,#about-image-box{
+        width:100%
+    }
+    #about-text-box{
+        text-align: justify;
+    }
+}
+
+
+/* service section */
+#services-box{
+    padding: 0px 50px;
+    display:flex;
+    gap:30px;
+}
+.service-box{
+    width:33.33%;
+}
+img.service-image{
+    width:100%;
+}
+@media (max-width:768px){
+    #services-box{
+    padding: 0px 50px;
+    flex-wrap: wrap;
+    
+}
+.service-box{
+    width:100%;
+}
+}
+/*products section*/
+#products-box{
+    padding:0px 50px;
+    display:flex;
+    gap:30px;
+}
+.product-box{
+    width: 25%;
+}
+img.product-image{
+    width:100%;
+}
+@media (max-width:768){
+    #product-box{
+     padding: 0px 50px;  
+     flex-wrap: wrap; 
+    }
+.product-box{
+    width:100%
+}
+
+    
+ } 
+   
+/* KRISH INTERIORS FOOTER */
+.krish-footer {
+    background: #17251f;
+    color: #f5f2eb;
+    font-family: Arial, sans-serif;
+    padding: 60px 7% 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr;
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d6b982;
+    margin-bottom: 20px;
+}
+
+.footer-logo span {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-top: 6px;
+}
+
+.footer-about p,
+.footer-contact p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #d0d5d0;
+    margin-bottom: 12px;
+}
+
+.krish-footer h3 {
+    color: #d6b982;
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 13px;
+}
+
+.krish-footer a {
+    color: #d0d5d0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.krish-footer a:hover {
+    color: #d6b982;
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.footer-social a {
+    font-size: 12px;
+    border-bottom: 1px solid #d6b982;
+    padding-bottom: 5px;
+}
+
+.footer-contact strong {
+    color: #f5f2eb;
+}
+
+.footer-bottom {
+    border-top: 1px solid #435047;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.footer-bottom p {
+    color: #b8c0b9;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .krish-footer {
+        padding: 40px 6% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
